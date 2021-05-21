@@ -1,5 +1,7 @@
 package com.dms.consumer.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Address {
 
 	private String cep;
@@ -93,6 +95,7 @@ public class Address {
 		this.siafi = siafi;
 	}
 
+	@JsonIgnore
 	public boolean isValid() {
 		return getCep() != null;
 	}
