@@ -11,6 +11,12 @@ Comando para executar os testes:
 mvn test
 ```
 
+Usamos para documentar a API o Swagger usando como especificação o OpenAPI, para visualizar:
+```
+http://localhost:8080/swagger-ui.html
+```
+
+
 * Author
 [**Diorgenes Morais**](https://github.com/diorgenesmorais)
 
