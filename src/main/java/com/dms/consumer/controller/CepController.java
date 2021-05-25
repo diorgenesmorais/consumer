@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.dms.consumer.model.Address;
 import com.dms.consumer.repository.CepRepository;
 
+import io.swagger.annotations.Api;
+
+@Api(tags = "CEP")
 @RequestMapping("/cep")
 @RestController
 public class CepController {
