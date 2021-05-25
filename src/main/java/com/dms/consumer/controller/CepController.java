@@ -11,6 +11,7 @@ import com.dms.consumer.model.Address;
 import com.dms.consumer.repository.CepRepository;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 @Api(tags = "CEP")
 @RequestMapping("/cep")
@@ -20,6 +21,7 @@ public class CepController {
 	@Autowired
 	private CepRepository cepRepository;
 
+	@ApiOperation("Busca endereço por CEP")
 	@GetMapping("/{cep}")
 	public ResponseEntity<Address> getCep(@PathVariable("cep") String cep) {
 		Address address = cepRepository.findForCep(cep);
